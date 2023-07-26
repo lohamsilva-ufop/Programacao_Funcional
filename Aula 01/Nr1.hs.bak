@@ -1,4 +1,3 @@
---Aluno: Loham Santos da Silva / Programação Funcional
 --1) implemente uma função que, a partir de 3 numeros inteiros retorne a soma dos quadrados dos 2 maiores numeros.
 
 comp:: Int -> Int -> Int
