@@ -3,10 +3,11 @@
 --  4.1) usando casamento de padrao , com uma equação para cada possibilidade
 --  4.2) usando a função lenght de tipo: lenght :: [a] -> Int
 
-lenght :: [a] -> Int
-lenght [] = 0
-lenght [ a ] = 1
---lenght [_ _] = 2
+foo :: [a] -> Bool
+foo [] = True
+foo [ _ ] = True
+foo [ _ , _] = True
+foo _ = False
 
-
--- O que fazer com o casamento de padrao com equacao para as possibilidades?
+foo1 :: [a] -> Bool
+foo1 xs = length xs <= 2
