@@ -1,0 +1,11 @@
+---- Aluno: Loham Santos da Silva / Programação Funcional / Prof. Rodrigo Geraldo Ribeiro
+-- 3) Implemente a função orList que produz a disjunção de uma lista de booleanos fornecida como entrada
+
+foo :: [a] -> Bool
+foo [] = True
+foo [ _ ] = True
+foo [ _ , _] = True
+foo _ = False
+
+foo1 :: [a] -> Bool
+foo1 xs = length xs <= 2

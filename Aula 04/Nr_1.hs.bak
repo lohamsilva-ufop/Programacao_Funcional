@@ -1,0 +1,9 @@
+---- Aluno: Loham Santos da Silva / Programação Funcional / Prof. Rodrigo Geraldo Ribeiro
+-- 1) Defina a função minList que retorna o menor inteiro de uma lista de numeros fornecida como entrada.
+-- Siga cada um dos passos anteriores para a solução
+
+minList :: Int -> [Int] -> Int
+minList a [] = a
+minList a (x : xs) 
+	| a < x = minList a xs
+	| otherwise = minList x xs
